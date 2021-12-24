@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+    font-size: 55px;
+}
+
+body{
+    transition: all 1s;
+}
+
+nav {
+    margin-top: 15vh;
+    padding-bottom: 1vh;
+    width: 100%;
+}
+
+.nav-center{
+    margin-left: auto;
+    margin-right: auto;
+    background-color:peru;
+    width: 500px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+nav{
+    width: 100%;
+}
+
+.container{
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #55ca;
+}
+
+.btn{
+    margin-top: 1vh;
+    border-radius: 15px;
+    border-color: #55ca;
+    background-color: #5504adca;
+}
+
+.color{
+    color: whitesmoke;
+}
