@@ -1,0 +1,177 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+    --clr-primary:#1c1c1c;
+    --clr-gray:#37474f;
+    --clr-gray-light:rgb(205, 6, 255);
+}
+.container{
+   display: grid;
+   height: 100vh;
+   grid-template-columns: repeat(5,1fr);
+   grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 0.8fr;
+   grid-template-areas: 
+    "header header header header header"
+    "sidebar main main main main "
+    "sidebar cintent1 cintent2 cintent3 cintent4"
+    
+    "sidebar footer footer footer footer" ;
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform:uppercase;
+    font-size: 15px;
+    color:darkslategrey;
+    text-align: center;
+
+}
+
+header{
+    border-radius: 1rem;
+    background:rgba(255, 255, 255, 0.432);
+    grid-area: header;
+    height: 8vh;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+html{
+    background: linear-gradient(95.31deg,rgb(44, 139, 248) 3.5%,rgb(248, 44, 231)76.25%);
+    
+}
+
+main{
+    border-radius: 1rem;
+    background:rgba(255, 255, 255, 0.432);
+    grid-area: main;
+    
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.sidebar {
+    border-radius: 1rem;
+    background:rgba(255, 255, 255, 0.432);
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.cintent1 {
+    grid-area: cintent1;
+    
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.cintent2 {
+    
+    grid-area: cintent2;
+    
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.cintent3 {
+    
+    grid-area: cintent3;
+   
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.cintent4 {
+    
+    grid-area: cintent4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+footer{
+    border-radius: 1rem;
+    background:rgba(255, 255, 255, 0.432);
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding); 
+}
+.sidebar{
+    display: inline-block;
+}
+
+.imgg1{
+    opacity: 0.4;
+
+}
+.news {
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: rgba(255, 255, 255, 0.432);
+    text-align: center;
+    border-radius: relative;
+    margin: 0.5rem;
+    
+}
+.banner-img {
+    position: absolute;
+    background-image: url(/img/blade-runner-2049-gif-pink-Favim.com-7761650.gif);
+    height: 14rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-img2 {
+    position: absolute;
+    background-image: url(/img/b3a352d0e354188690534f6e18c8b990.gif);
+    height: 14rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-img4 {
+    position: absolute;
+    background-image: url(/img/akira.gif);
+    height: 14rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-img3 {
+    position: absolute;
+    background-image: url(/img/375px-Digital_rain_animation_medium_letters_shine.gif);
+    height: 14rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile-img{
+    
+    width: 7.5rem;
+    height: 8rem;
+  
+    clip-path: circle(60px at center ) ;
+    margin-top: 8.5rem;
+    
+    
+}
+.name {
+    margin-top: -1vh;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.description {
+    margin: 1rem  2rem;
+    font-size: 0.9rem;
+}
+.btn {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    text-align: center;
+    margin-top:1.5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: var(--clr-primary );
+    z-index: 20;
+}
