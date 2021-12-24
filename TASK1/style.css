@@ -1,0 +1,105 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+.container{
+   display: grid;
+   height: 100vh;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 0.8fr;
+   grid-template-areas: 
+    "logo1 header header header"
+    "sidebar main main main"
+    "sidebar cintent1 cintent2 cintent3"
+    "sidebar footer footer footer" ;
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-transform:uppercase;
+    font-size: 15px;
+    color:darkslategrey;
+    text-align: center;
+
+}
+.logo1{
+    position: relative;
+    background: #c7c7c7;
+    
+    grid-area: logo1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.logo{
+    transform-style: o;
+    position: absolute;
+    top: 0.5vh;
+    height: 90%;
+
+}
+header{
+    background: #c7c7c7;
+    
+    grid-area: header;
+    height: 8vh;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+html{
+    background:url(/img/bg.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+main{
+    background: #494747d0;
+    grid-area: main;
+    color: #3cbaf5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.sidebar {
+    background: #c7c7c7;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.cintent1 {
+    background: #494747d0;
+    grid-area: cintent1;
+    color: #3cbaf5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.cintent2 {
+    background: #494747d0;
+    grid-area: cintent2;
+    color: #3cbaf5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.cintent3 {
+    background: #494747d0;
+    grid-area: cintent3;
+    color: #3cbaf5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.cintent4 {
+    background: #c7c7c7;
+    grid-area: cintent4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+footer{
+    background: #c7c7c7;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding); 
+}
+.sidebar{
+    display: inline-block;
+}
+
+.imgg1{
+    opacity: 0.4;
+}

@@ -1,0 +1,65 @@
+:root{
+    --clr-primary:#1c1c1c;
+    --clr-gray:#37474f;
+    --clr-gray-light:rgb(205, 6, 255);
+}
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans","sans-serif";
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: var(--clr-gray);
+    margin: 2rem;
+}
+.wrapper-gird {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    justify-content: center;
+}
+.news {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: relative;
+    margin: 0.5rem;
+    
+}
+.banner-img {
+    position: absolute;
+    /*background-image: url(/TASK1/img/blade-runner-2049-gif-pink-Favim.com-7761650.gif);*/
+    height: 10rem;
+    width: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile-img{
+    position: absolute;
+    top: -98px;
+    width: 20rem;
+    width: 20rem;
+    clip-path: circle(60px at center );
+    margin-top: 6.5rem;
+}
+.name {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.description {
+    margin: 1rem  2rem;
+    font-size: 0.9rem;
+}
+.btn {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    background-color: var(--clr-primary );
+}
