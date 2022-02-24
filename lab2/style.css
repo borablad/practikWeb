@@ -1,0 +1,63 @@
+.higheBlock {
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(194, 235, 84, 0.445);
+}
+
+p {
+    font-size: 2.5em;
+    
+    color: #195821;
+    font-weight: 300;
+}
+
+
+#img_main {
+    max-width: 17em;
+}
+
+.floating-button {
+    text-decoration: none;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: opx;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #195821;
+    background: rgba(255, 255, 255, 0.342);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+  }
+  .floating-button:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+  }
+
+  .math_wrap {
+    border-top: solid 3px #195821 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .math_subwrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+  }

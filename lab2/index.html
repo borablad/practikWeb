@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <p id="startText">загадай число от 0 до 100 (угадаю за 7 попыток)</p>
+    <button onclick="Start()" id="startButton" class="floating-button">Начинаем</button>
+
+    <p id="qustion" class="higheBlock"></p>
+    <img src="/img/1111.png" alt="img" id="img_main">
+
+    <button onclick="smallClick()" id="small" class="floating-button higheBlock">Меньше</button>
+    <button onclick="bingoClick()" id="bingo" class="floating-button higheBlock">Угадл</button>
+    <button onclick="bigClick()" id="big" class="floating-button higheBlock">Больше</button>
+
+    <div class="math_wrap">
+        <div class="math_subwrap">
+            <img src="/img/3333.png" alt="img" id="img_main"> 
+            <p id="mathText">пройди тест</p>
+            
+        </div>
+        <button onclick="mathStart()" id="mathStartButton" class="floating-button">Начинаем</button>
+        <div class="math_subwrap">
+            <button onclick="math1()" id="mathButton1" class="floating-button higheBlock">1</button>
+            <button onclick="math2()" id="mathButton2" class="floating-button higheBlock">2</button>
+            <button onclick="math3()" id="mathButton3" class="floating-button higheBlock">3</button>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
